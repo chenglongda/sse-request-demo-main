@@ -1,4 +1,4 @@
-package com.alibaba.ssedemo;
+package com.alibaba.demo.sse;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,6 +9,9 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.Iterator;
 
+/**
+ * 
+ */
 public class SSEIterator implements Iterator<SSEIterator.SseEventData>, AutoCloseable {
     private final HttpURLConnection connection;
     private final BufferedReader reader;
